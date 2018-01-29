@@ -46,21 +46,54 @@
     border: solid 14px #65a8d4;
 }
 
-.user-summary h1 {
+.user-summary .user-name {
     text-align: center;
     color: #ffffff;
     margin: 10px 0 40px;
     
 }
 
+.margin-bottom-gone {
+    margin-bottom: 0;
+}
+
 .stats-list {
     background-color: white;
     list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.stats-list li a {
+    display: block;
+    text-decoration: none;
+    color:#909090;
+    font-weight: bold;
+    padding: 1em;
 }
 
 .stats-list li {
-    display: inline-block;
-    width: 32%;
+    margin: auto;
     text-align: center;
+    border-right: solid thin #D1D1D1;
+    border-top: solid thick #ffffff;  /* fix for border shifting content on hover state */
+    width: 33.3%;  /* to ensure that all 3 list items are taking up 1/3 of its parent width */ 
+}
+
+.stats-list li a h1 {
+    margin-top: 0;
+}
+
+.stats-list li a p {
+    margin: .4em 0;
+    
+}
+
+.stats-list li:hover {
+    color: #65a8d4;
+    border-top: solid thick #65a8d4;
 }
 
