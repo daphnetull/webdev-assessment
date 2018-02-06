@@ -1,44 +1,103 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Front End Challenge 1</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">    
+	<meta charset="utf-8">
+	<title>Front End Challenge 1</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css">    
 </head>
-<body class="flex-properties">
-    <div class="user-summary">
-        <img src="img/evanyou.png">
-        <h1 class="user-name">Evan You</h1>
-        <div class="user-summary-lower">
-            <ul class="stats-list">
-                <li>
-                    <a href="#">
-                        <h1 class="margin-bottom-gone">126</h1>
-                        <p>Likes</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <h1 class="margin-bottom-gone">851</h1>
-                        <p>Followers</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <h1 class="margin-bottom-gone">52</h1>
-                        <p>Following</p>
-                    </a>
-                </li>
-            </ul>
+<body>
+	<div class="user-summary">
+		<img src="img/evanyou.png" alt="profile pic">
+		<h1 class="user-name user-name-upper">Evan You</h1>
+		<div class="user-summary-lower">
+			<ul class="stats-list">
+				<li>
+					<a href="#">
+						<h1 class="no-top-margin no-bottom-margin">126</h1>
+						<p>Likes</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<h1 class="no-top-margin no-bottom-margin">851</h1>
+						<p>Followers</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<h1 class="no-top-margin no-bottom-margin">52</h1>
+						<p>Following</p>
+					</a>
+				</li>
+			</ul>
 
-        </div>
-        
+		</div>
+	</div>
+	<div class="user-details">
+		<img src="img/evanyou.png" class="user-details-image" alt="profile pic">
+		<h1 class="user-name user-name-lower">Evan You</h1>
+		<div class="user-details-stats">
 
-    </div>
-
-
-
+			<ul class="stats-list-lower">
+				<li>
+					<div>
+						<h2 class="no-top-margin no-bottom-margin">855</h2>
+						<p>Followers</p>
+					</div>
+				</li>
+				<li>
+					<div>
+						<h2 class="no-top-margin no-bottom-margin">52</h2>
+						<p>Following</p>
+						
+					</div>
+				</li>
+			</ul>
+			<a href="#" class="follow-button"><span>Follow</span></a>
+		</div>
+		<div class="activity-log">
+			<table class="activity-log-table">
+				<tr>
+					<td class="day-container">
+						<p class="day">Today</p>
+						<img src="img/message.svg" alt="message icon" class="activity-icon">
+					</td>
+					<td class="activity-summary">
+						<p>Received new message from Client</p>
+					</td>
+				</tr>
+				<tr>
+					<td class="day-container">
+						<p class="day">Yesterday</p>
+						<img src="img/like.svg" alt="like icon" class="activity-icon">
+					</td>
+					<td class="activity-summary">
+						<p>Liked this post from Dribble</p>
+						<img src="img/embed.png" alt="embed icon" class="activity-summary-img">
+					</td>
+				</tr>
+				<tr>
+					<td class="day-container">
+						<p class="day">12/18</p>
+						<img src="img/fire.svg" alt="fire icon" class="activity-icon">
+					</td>
+					<td class="activity-summary">
+						<p>Trending on Twitter for #vueconf</p>
+					</td>
+				</tr>
+				<tr>
+					<td class="day-container">
+						<p class="day">12/16</p>
+						<img src="img/playlist.svg" alt="playlist icon" class="activity-icon">
+					</td>
+					<td class="activity-summary">
+						<p>Listening to Locked Out Of Heaven</p>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
 </body>
