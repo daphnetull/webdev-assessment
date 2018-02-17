@@ -70,6 +70,7 @@
           height: 130px;
       }
     </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
   <body>
 
@@ -121,7 +122,13 @@
     </main>
 
     <script>
-      // Write your code here
+    	var anchorSelect = document.querySelector("a.meow");
+    	var anchorSelect2 = document.querySelector("a[href='#']");
+    	var anchorSelect3 = document.getElementById("cat").querySelector("a");
+    	var anchorSelect4 = document.getElementById("cat").querySelector("a:first-child");
+    	var anchorSelect5 = document.getElementById("cat").querySelector("a:only-of-type");
+    	
+
     </script>
 
 
@@ -146,8 +153,15 @@
       Give an example of JavaScript code that would run in the latest version of Chrome, but not in IE11.
     </label>
 
+
+    <!-- found at https://developer.mozilla.org/en-US/docs/Web/API/Element/matches#Browser_compatibility -->
+
     <script>
-      // Write your code here
+   		var doesElementExist = document.getElementById("q2");
+   		if (doesElementExist.matches("hr")){
+   			console.log("hr with id of q2 exists on page");
+   		}
+
     </script>
 
 
@@ -179,7 +193,16 @@
     </div>
 
     <script>
-      // Write your code here
+    	
+    	var changeButtonColor = document.getElementById("color-changer")
+    	var changeButtonColorLink = changeButtonColor.querySelector("p a");
+    	var actualButton = changeButtonColor.querySelector("button");
+
+    	changeButtonColorLink.setAttribute("href", "#color-changer");
+
+    	changeButtonColorLink.addEventListener("click", function(){
+    		actualButton.setAttribute("style", "background-color:mediumspringgreen");
+    	});
     </script>
 
 
@@ -210,7 +233,22 @@
     </ul>
 
     <script>
-      // Write your code here
+
+			$.getJSON( "links.json", function( data ) {
+				var charitiesList = document.getElementById("charities");
+
+				for (var i = 0;i<data.links.length;i++){
+					$("#charities").append("<li><a href=" + data.links[i]['url'] + ">" + data.links[i]['name'] + "</a></li>");
+
+
+				}
+
+
+			
+
+
+			});
+  			
     </script>
 
 
@@ -246,7 +284,14 @@
     </div>
 
     <script>
-      // Write your code here
+    	var submitButton = document.getElementById("submitMovie");   
+    	var movieOutput = document.getElementById("favoriteMovie");
+    	
+
+    	submitButton.addEventListener("click", function() {
+				var movieInput = document.getElementById("movie").value;
+				movieOutput.appendChild(document.createTextNode(movieInput));  // sanitizing the user input by creating it as a new DOM mode
+    	});
     </script>
 
 
