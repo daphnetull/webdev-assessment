@@ -1,0 +1,113 @@
+
+****challenge 1****
+
+
+1/28
+
+11:30 am - 11:43 am:
+
+opened the mockup, started thinking about ideas on how to replicate it.  the upper part looks fairly simple: using a 50% border radius with a thick border for the profile pic.  use borders to separate the likes, followers, and following.  use a :hover to make the text turn blue, along with giving them a thick upper border.  
+
+the bottom looks more challening - not sure exactly how to make the profile pic float over the upper and lower section.  thinking about just assigning it a heighth that exceeds the size of the gray area with followers and following.  will definitely need to do some research to figure some of that out.  going to bed for now, just giving myself an idea of what i'm up against. 
+
+ 
+1/29
+11:00 am - 3:00 pm
+
+
+1/30
+9:00 am - 12:00 am
+
+
+1/31
+4:00  pm - 5:00pm
+
+
+2/3
+10:20 am - 11:00 am
+
+
+2/5
+11:00 am - 1:00pm
+
+Finished project.
+
+Final thoughts on challenge 1 - I had a lot of fun doing this.  It took me awhile due to complete it since using the absolute positioning required a lot of trial and error.  But I learned quite a bit and this was a good challenge for me.  For the "activity log" I decide to use a table since I thought it made the most sense semantically as it seemed fundamenally to me to be tabular data.  
+
+
+Resources used:
+
+https://github.com/SVG-Edit/svgedit
+
+https://css-tricks.com/tips-aligning-icons-text/
+
+https://css-tricks.com/useful-nth-child-recipies/
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/background-size   - referred to for a refresher on background size properties.  
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/margin  - couldn't remember the shorthand order for margins.  
+
+https://css-tricks.com/snippets/jquery/make-entire-div-clickable/
+
+
+******challenge 2******
+
+2/6
+
+9:00 am - 9:20 am
+
+
+
+2/7
+
+7:00 am - 2:00 pm
+
+I flew through all of them except for problem #4.  I ended up using JQuery since that has the $.getJSON method built into it.  I don't think I could have solved it without JQuery.  The part that troubled me the most was accessing the different properties of the object links.  I had take a break, but once I sat back and started thinking of just
+
+
+
+Resources used:
+
+https://developer.mozilla.org/en-US/docs/Web/API/Element/matches#Browser_compatibility
+https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector
+https://www.w3schools.com/jsref/met_element_setattribute.asp
+https://www.w3schools.com/js/js_objects.asp - I'm ashamed to say I used this for a quick review of objects.  
+
+
+
+saturday 2/17 
+
+9:00 am - 11:30 am, finished challenge 2 at 11:30
+
+http://shebang.brandonmintern.com/foolproof-html-escaping-in-javascript/
+https://vip.wordpress.com/2015/03/25/preventing-xss-in-javascript/
+
+sanitizing input is something that's new to me, so I did some research and came up with a very simple (hopefully) solution.  I'm sure there's a much more solid approach.  I didn't account for escaping any special characters.  Just doing some quick research informed me that the browser sanitizes data as it's passed the DOM API, so if someone enters some malicious code, that should render it as a normal and hopefully harmless text node.    
+
+
+******challenge 3*******
+
+11:30 am - 4:13 pm, stopped at 4:13
+
+
+I wasn't able to finish problems 2 and 4.  I have a lot of other work to do so I realized it was time to move on.  
+
+
+
+Resources used:
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join
+
+
+
+
+Final thoughts:
+
+This was a really good and challenging experience for me.  I learned some new things and also got a nice refresher on objects.  I think my favorite was challenge 1, just because I enjoy the creative/design aspect of it.  Plus it's fun to show it off to friends :)    Challenge 3 was the most difficult for me.  I can basically visualize the logic, but I'm struggling to translate that logic into code.  This will be the biggest obstacle for me to overcome in my coding adventures.
+
+Thank you for giving me the opportunity to tackle these challenges!  I hope this feedback helps you and your team further refine this assessment.  Let me know if you need more information from me.  I'd be glad to help!
+
+-Daphne
